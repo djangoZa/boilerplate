@@ -11,6 +11,12 @@ Ubuntu Server 64bit
 Installation
 ============
 
-```Bash
+```bash
 sudo apt-get install vagrant git
+```
+
+```bash
+mkdir ~/workspace
+cd ~/workspace
+git clone https://github.com/djangoZa/boilerplate.git
 ```

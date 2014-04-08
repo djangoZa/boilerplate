@@ -4,21 +4,21 @@ This repository is intended to serve as the base for our PHP projects.
 
 Prerequisites
 =============
-Vagrant 1.3.3
-VirtualBox 4.2.18
-Git 1.7.11.3
+- Vagrant 1.3.3
+- VirtualBox 4.2.18
+- Git 1.7.11.3
 
 Installation
 ============
 
-##Clone Boilerplate
+###Clone Boilerplate
 ```bash
 mkdir ~/workspace
 cd ~/workspace
 git clone https://github.com/djangoZa/boilerplate.git
 ```
 
-##Provision Boilerplate
+###Provision Boilerplate
 ```bash
 cd ~/workspace/boilerplate
 vagrant up --provision
@@ -27,5 +27,5 @@ vagrant up --provision
 Documentation
 =============
 
-##Vagrant
+###Vagrant
 https://docs.vagrantup.com/v2/

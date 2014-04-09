@@ -4,7 +4,7 @@ class ErrorController extends Zend_Controller_Action
     public function errorAction()
     {
         $errors = $this->_getParam('error_handler');
- 
+
         switch ($errors->type) {
             case Zend_Controller_Plugin_ErrorHandler::EXCEPTION_NO_ROUTE:
             case Zend_Controller_Plugin_ErrorHandler::EXCEPTION_NO_CONTROLLER:
@@ -19,7 +19,7 @@ class ErrorController extends Zend_Controller_Action
                 $this->view->message = 'Application error';
                 break;
         }
- 
+
         $this->view->exception = $errors->exception;
         $this->view->request   = $errors->request;
     }

@@ -4,7 +4,7 @@ defined('APPLICATION_PATH') ||
     define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
 
 //Define application environment
-$environment = trim(file_get_contents(APPLICATION_PATH . '/../environment'));
+$environment = trim(file_get_contents(APPLICATION_PATH . '/../../environment.var'));
 if (!empty($environment)) {
     define('APPLICATION_ENV', $environment);
 } else {

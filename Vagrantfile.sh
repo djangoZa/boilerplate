@@ -14,5 +14,8 @@ ln -fs /vagrant/project/public /var/www
 #ENABLE APACHE MOD REWRITE
 a2enmod rewrite
 
+#SET THE ENVIRONMENT VARIABLE
+echo $1 > /vagrant/project/environment
+
 #RESTART APACHE
 service apache2 restart

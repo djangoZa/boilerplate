@@ -5,4 +5,9 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
     {
         //init symfony container
     }
+
+    public function getContainer()
+    {
+        return 'container';
+    }
 }

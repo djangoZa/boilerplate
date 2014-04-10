@@ -21,7 +21,7 @@ git clone https://github.com/djangoZa/boilerplate.git
 ###Provision Boilerplate
 ```bash
 cd ~/workspace/boilerplate
-vagrant up --provision
+APPLICATION_ENV='development' vagrant up --provision
 ```
 
 Documentation

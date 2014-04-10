@@ -4,8 +4,12 @@ defined('APPLICATION_PATH') ||
     define('APPLICATION_PATH', realpath(dirname(__FILE__) . '/../application'));
 
 //Define application environment
-defined('APPLICATION_ENV') || 
-    define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
+$environment = trim(file_get_contents(APPLICATION_PATH . '/../environment'));
+if (!empty($environment)) {
+    define('APPLICATION_ENV', $environment);
+} else {
+    throw new Exception('No environment has been specified');
+}
 
 //Set the include paths
 set_include_path(implode(PATH_SEPARATOR, $paths = array(

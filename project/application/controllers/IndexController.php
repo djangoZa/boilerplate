@@ -1,14 +1,14 @@
 <?php
 class IndexController extends Zend_Controller_Action
 {
- 
     public function init()
     {
         /* Initialize action controller here */
     }
- 
+
     public function indexAction()
     {
-        // action body
+        $container = $this->getContainer();
+        var_dump($container);
     }
 }
